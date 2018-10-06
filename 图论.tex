@@ -196,7 +196,47 @@
     \end{thm}
     
     \textbf{证明：}
+    $ G=K_{n} $，则$ \mathit{K}(G)=\lambda(G)=\delta(G)=n-1$。
     
+    设$ v \in V(G), d(v)=\delta(G), N(v) = \lbrace u| u~v \rbrace $，
+    
+    $ F = \brace uv|u \in N(v) \rbrace $ 则 $G-F$是不连通的。
+    $\lambda(G) \leq |F|= \delta(G) $
+    
+    设$ G \neq K_{n}$，则存在 $ x,y \in V(G) $，使得$x \not\sim y$。
+    
+    设$ \lambda(G)=k $，则存在 $ F \subseteq E $，使得$G-F$是不连通的，至少
+    有两个连通分支（恰好有两个）$ C_{1}$和 $ C_{2}$。
+    
+    $V(C_{1})=S, V(C_{2})=\bar{S}, F= \lbrace uv| u \in S, v \in \bar{S}, uv \in E(G)$。
+    
+    \begin{itemize}
+    \item 情形一 S中的每个顶点与$ \bar{S} $中的每个顶点都相邻，
+    则$|F| = |S||\xi| \geq n-1$。
+    \item 情形二 存在顶点$u\in S,v \in \bar{S}, u\not\sim v$  。
+    令$T=N_{\bar{S}}(u) \cap \lbrace x\in S \ \lbrace u \rbrace | \exists y \in \bar{S}, s.t x~y$，
+    其中$N_{\bar{S}}= \lbrace x \in \bar{S} | u~x \rbrace$。
+    
+    则在$\lbrack S,\bar{S} \rbrack $中至少存在$|T|$条边。
+    $|T| \leq | \lbrack S, \bar{S} \rbrack | = |F| = \lambda(G) $,
+    T是$u,v$的分离集。
+    则有 $\mathit{K}(G) \leq |T| \leq | \lbrack S, \bar{S} rbrack | = \lambda{G}  $
+    
+    \end{itemize}
+    
+    \begin{thm}
+    平均度至少为$4k$的图必有$k-$连通子图。
+    即$d = \frac{ \sum_{ v\inV }( d(V) ) }{|G|} = \frac{2\| G \|}{|G|} \geq 4k$
+    $\Longrightarrow$
+    H是$k-$连通的且H是G的子图。
+    \end{thm}
+    
+    \textbf{证明}
+    对$n$作归纳：
+    $n=2k-1 ,i.e k = \frac{n+1}{2} $ 
+    
+    \begin{e}
+    $m \geq (2k-3)(n-k+1)+1$
     
     \tableofcontents
     \section{勾股定理在古代}\label{sec:diyijie}
