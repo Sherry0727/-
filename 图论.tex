@@ -257,6 +257,40 @@
              & \geq & ( 2k-3)( n-k+1 )+1 \\
     \end{eqnarray*}
     
+    由归纳假设，$G-v$ 有 $k-$连通子图，
+    即G有$ k-$连通子图。
+    
+    \textbf{情形二：}
+    $ \delta(G) \geq 2k-2 $
+    
+    \begin{itemize}
+    \item 情形2.1 G是 $k-$连通的 $\Longrightarrow$ 结论显然成立。
+    \item 情形2.2 G不是$k-$连通的，
+    则存在$|X| < k $使得$G-X$不连通。
+    即$G = G_{1} \cup G_{2} , |G_{1} \cap G_{2}| < k, |G_{1}|,|G_{2}| \leq n+1 $
+    $ G_｛1｝-G_{2}$和$G_{2} - G_{1}$中无边。
+    $V(G_{1}) \ V(G_{2})$ $V(G_{2}) \ V(G_{1})$
+    由于$ \delta(G) \geq 2k-2 $，
+    则$|G_{1}| \geq 2k-1, |G_{2}| \geq 2k-1$，
+    
+    如果$G_{1}$(或是$G_{2}$)满足归纳法假设条件：$|G_{1}| \geq 2k-1 $，
+    $|E(G_{1})| \geq (2k-3)(|G_{1}| - k + 1 ) + 1$。
+    $G_{1}$含有$k-$连通子图。
+    
+    如果$G_{1}$和$G_{2}$都不满足归纳假设条件，
+    则由
+    \begin{eqnarray*}
+    \| G_{1} \| & < & (2k-3)(|G_{1}| -k+1)+1   \\
+    \| G_{2} \| & < & (2k-3)(|G_{2}|- k+1)+1  \\
+    \end{eqnarrat*}
+    可以推出：
+    \begin{eqnarry*}
+    \| G \| leq \| G_{1} \| +  \| G_{2} \| & \leq & (2k-3)(|G_{1}| +|G_{2}| -2K+2 ) \\
+                                           & =    & (2k-3)(n+1-k+1)\\
+    \end{eqnarray*}
+    矛盾。
+    
+    \end{itemize}
     
     \tableofcontents
     \section{勾股定理在古代}\label{sec:diyijie}
